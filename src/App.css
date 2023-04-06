@@ -1,0 +1,39 @@
+:root {
+  --bg-elements-color: hsl(209, 23%, 22%);
+  --bg-color: hsl(207, 26%, 17%);
+  --text-color: hsl(0, 0%, 100%);
+}
+.light-mode {
+  --bg-elements-color: hsl (0, 0%, 100%);
+  --bg-color: hsl (0, 0%, 98%);
+  --text-color: hsl (200, 15%, 8%);
+}
+.App {
+  text-align: center;
+}
+.text-color-white {
+  color: var(--text-color);
+}
+.bg-dark-blue {
+  background-color: var(--bg-color);
+}
+.bg-light-blue {
+  background-color: var(--bg-elements-color);
+}
+.each-country {
+  width: 90%;
+}
+.img-height{
+  height: 30vh;
+}
+.countries-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+/* desktop-design */
+@media(min-width:768px){
+  .countries-container{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
